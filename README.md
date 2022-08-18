@@ -30,7 +30,7 @@ git clone https://github.com/Workmate-app/Workmate/Workmate-Server-Linux
 
 Ora si deve scaricare .net6.0 (desktop apps) dal sito di [Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?cid=getdotnetcore)
 
-Una volta installato .net6.0 basterà recarsi nell cartella ./Workmate-server-windows/bin/Release/net6.0-windows/ ed aprire il file .exe.
+Una volta installato .net6.0 basterà recarsi nella cartella ./Workmate-server-windows/bin/Release/net6.0-windows/ ed aprire il file .exe.
 
 In caso di firewall consentire la porta 16460 in entrata
 
