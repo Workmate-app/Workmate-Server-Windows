@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "SuperSimpleTcp/2.6.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SuperSimpleTcp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SuperSimpleTcp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SuperSimpleTcp/2.6.1.4": {
+      "sha512": "AGX5XoKGcc3jJKHkI0Tb3VxzvxEewZYowpezIWaU/QdTfN1xq2WuwdJQuvSN1F3nnIphaMWUp21sP59ZQbr/Sw==",
+      "type": "package",
+      "path": "supersimpletcp/2.6.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/net461/SimpleTcp.xml",
+        "lib/net461/SuperSimpleTcp.dll",
+        "lib/net48/SuperSimpleTcp.dll",
+        "lib/net5.0/SimpleTcp.xml",
+        "lib/net5.0/SuperSimpleTcp.dll",
+        "lib/net6.0/SimpleTcp.xml",
+        "lib/net6.0/SuperSimpleTcp.dll",
+        "lib/netcoreapp3.1/SimpleTcp.xml",
+        "lib/netcoreapp3.1/SuperSimpleTcp.dll",
+        "lib/netstandard2.0/SimpleTcp.xml",
+        "lib/netstandard2.0/SuperSimpleTcp.dll",
+        "lib/netstandard2.1/SimpleTcp.xml",
+        "lib/netstandard2.1/SuperSimpleTcp.dll",
+        "supersimpletcp.2.6.1.4.nupkg.sha512",
+        "supersimpletcp.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "SuperSimpleTcp >= 2.6.1.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Matteo Piffari\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\programmazione\\School\\Concorso Sorint 2022\\Workmate-Server-Windows\\Workmate-server-windows\\Workmate-server-windows.csproj",
+      "projectName": "Workmate-server-windows",
+      "projectPath": "D:\\programmazione\\School\\Concorso Sorint 2022\\Workmate-Server-Windows\\Workmate-server-windows\\Workmate-server-windows.csproj",
+      "packagesPath": "C:\\Users\\Matteo Piffari\\.nuget\\packages\\",
+      "outputPath": "D:\\programmazione\\School\\Concorso Sorint 2022\\Workmate-Server-Windows\\Workmate-server-windows\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Matteo Piffari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "SuperSimpleTcp": {
+            "target": "Package",
+            "version": "[2.6.1.4, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

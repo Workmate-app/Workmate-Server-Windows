@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NVC1ByZWMLGHVeHcaLjbk9zegA18D2CHuJPEu7Vz1RUpIFRdNu6sgGhCMIjiHML0PfQ/M34wTfeqiGB5VYRoPQ==",
+  "success": true,
+  "projectFilePath": "D:\\programmazione\\School\\Concorso Sorint 2022\\Workmate-Server-Windows\\Workmate-server-windows\\Workmate-server-windows.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matteo Piffari\\.nuget\\packages\\supersimpletcp\\2.6.1.4\\supersimpletcp.2.6.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}
