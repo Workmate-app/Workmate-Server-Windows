@@ -13,6 +13,10 @@ namespace Workmate_server_windows
         SimpleTcpServer server = new SimpleTcpServer("0.0.0.0:16460");
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.apri_avvio_win == true)
+                avvio_win_ckb.Checked = true;
+            else
+                avvio_win_ckb.Checked = false;
 
             server.Events.ClientConnected += ClientConnected;
             server.Events.ClientDisconnected += ClientDisconnected;
@@ -81,6 +85,31 @@ namespace Workmate_server_windows
                 logs_txt.Text += $"{DateTime.Now} - {e.IpPort}: Connesso.{Environment.NewLine}";
                 ClientsIP.Items.Add(e.IpPort);
             });
+        }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            if (avvio_win_ckb.Checked)
+            {
+                Properties.Settings.Default.apri_avvio_win = true;
+                Microsoft.Win32.RegistryKey chiavereg = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+                Microsoft.Win32.Registry.SetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run", "Server_Workmate", Application.ExecutablePath, Microsoft.Win32.RegistryValueKind.String);
+            }
+            else
+            {
+                Properties.Settings.Default.apri_avvio_win = false;
+                Microsoft.Win32.RegistryKey chiavereg = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+                if (chiavereg.GetValue("Server_Workmate") != null)
+                    chiavereg.DeleteValue("Server_Workmate", false);
+            }
+            Properties.Settings.Default.Save();
+        }
+
+        private void esporta_btn_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+            saveFileDialog1.FileName = saveFileDialog1.FileName + ".txt";
+            File.WriteAllText(saveFileDialog1.FileName, logs_txt.Text);
         }
     }
 }
