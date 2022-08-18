@@ -10,7 +10,7 @@ namespace Workmate_server_windows
             InitializeComponent();
         }
 
-        SimpleTcpServer server = new SimpleTcpServer("127.0.0.1:16460");
+        SimpleTcpServer server = new SimpleTcpServer("0.0.0.0:16460");
         private void Form1_Load(object sender, EventArgs e)
         {
 
