@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Workmate-server-windows/1.0.0": {
+        "dependencies": {
+          "SuperSimpleTcp": "2.6.1.4"
+        },
+        "runtime": {
+          "Workmate-server-windows.dll": {}
+        }
+      },
+      "SuperSimpleTcp/2.6.1.4": {
+        "runtime": {
+          "lib/net6.0/SuperSimpleTcp.dll": {
+            "assemblyVersion": "2.6.1.4",
+            "fileVersion": "2.6.1.4"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Workmate-server-windows/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SuperSimpleTcp/2.6.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AGX5XoKGcc3jJKHkI0Tb3VxzvxEewZYowpezIWaU/QdTfN1xq2WuwdJQuvSN1F3nnIphaMWUp21sP59ZQbr/Sw==",
+      "path": "supersimpletcp/2.6.1.4",
+      "hashPath": "supersimpletcp.2.6.1.4.nupkg.sha512"
+    }
+  }
+}
